@@ -511,6 +511,8 @@ namespace KokkosBatched {
 #if defined(__ARM_NEON__) || defined(__ARM_NEON)
 #include <arm_neon.h>
 
+    #pragma message "COMPILING ARM NEON INTRINSICS......"
+
     template<>
     class Vector<SIMD<double>,2> {
     public:
